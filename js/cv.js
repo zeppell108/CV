@@ -1,35 +1,23 @@
 $(function() {
 
-
     $('input').on("click", function () {
 
-        var cls;
-        var gb = "gb";
-        var pl = "pl";
-        if (this.id == gb) {
-            $('.pl').each(function () {
+        var show;
+        var hide;
 
-                $(this).css('display', 'none');
-            });
-            $('.gb').each(function () {
-
-                $(this).removeAttr('style');
-            });
+        if (this.id == "gb") {
+            show = "gb";
+            hide = "pl";
         }
         else {
-            $('.gb').each(function () {
-
-                $(this).css('display', 'none');
-            });
-            $('.pl').each(function () {
-
-                $(this).removeAttr('style');
-            });
+            show = "pl";
+            hide = "gb";
         }
-
-
-
-        // alert('id: ' + id);
-
+        $('.' + hide).each(function () {
+            $(this).css('display', 'none');
+        });
+        $('.' + show).each(function () {
+            $(this).removeAttr('style');
+        });
     });
 });
