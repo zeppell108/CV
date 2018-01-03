@@ -1,5 +1,6 @@
 h3 {
     text-shadow:2px 2px 3px darkslategrey;
+    background: linear-gradient(to right, RGB(236, 234, 240) , white);
 }
 .light {
     color: darkgrey;
