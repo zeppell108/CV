@@ -3,10 +3,21 @@ h3 {
     background: linear-gradient(to right, RGB(236, 234, 240) , white);
 }
 .light {
-    color: darkgrey;
-    font-weight: 300;
-    font-size: smaller;
+    color: #d3d3d3;
+    font-weight: 200;
 }
 .pd {
     font-size: large;
+}
+.skills {
+    text-indent: 10px;
+    line-height: 40px
+}
+.addskills {
+    text-indent: 20px;
+}
+@media print {
+    .doNotPrint {
+        display: none;
+    }
 }
